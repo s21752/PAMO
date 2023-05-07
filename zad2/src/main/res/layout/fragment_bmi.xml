@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.NavigationActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilBodyWeight"
+        style="@style/TextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/largest_padding"
+        android:hint="@string/kg_hint"
+        android:layout_marginStart="@dimen/small_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tilBodyHeight"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etBodyWeightInput"
+            style="@style/TextInputLayout.Number"
+            android:layout_width="@dimen/number_input_width"
+            android:layout_height="@dimen/text_input_height"
+            tools:text="50.0" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvWeightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:text="@string/body_weight_label"
+        app:layout_constraintTop_toBottomOf="@id/tilBodyWeight"
+        app:layout_constraintEnd_toEndOf="@id/tilBodyWeight"
+        app:layout_constraintStart_toStartOf="@id/tilBodyWeight"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilBodyHeight"
+        style="@style/TextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/cm_hint"
+        android:layout_marginStart="@dimen/small_padding"
+        app:layout_constraintStart_toEndOf="@id/tilBodyWeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tilBodyWeight"
+        app:layout_constraintBottom_toBottomOf="@id/tilBodyWeight"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etBodyHeightInput"
+            style="@style/TextInputLayout.Number"
+            android:layout_width="@dimen/number_input_width"
+            android:layout_height="@dimen/text_input_height"
+            tools:text="50.0" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvHeightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_padding"
+        android:text="@string/body_height_label"
+        app:layout_constraintTop_toBottomOf="@id/tilBodyHeight"
+        app:layout_constraintEnd_toEndOf="@id/tilBodyHeight"
+        app:layout_constraintStart_toStartOf="@id/tilBodyHeight"
+        />
+
+    <TextView
+        android:id="@+id/tvBmiLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvWeightLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/largest_padding"
+        android:layout_marginStart="@dimen/default_padding"
+        android:text="@string/calculated_bmi_label"
+        />
+
+    <TextView
+        android:id="@+id/tvBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvBmiLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/large_padding"
+        android:layout_marginStart="@dimen/default_padding"
+        android:textSize="@dimen/bmi_font_size"
+        tools:text="274"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
