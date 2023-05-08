@@ -8,7 +8,7 @@ Seventh question
 <img src="https://i.ibb.co/yFDdvmx/seventh-question.png" width="30%" height="30%">
 
 Quiz end
-<img src="https://i.ibb.co/txyLf1s/quiz-end.png" width="30%" height="30%">
+<img src="https://i.ibb.co/wrMxd92/finished-quiz.png" width="30%" height="30%">
 
 Bmi graph button on bmi screen
 <img src="https://i.ibb.co/2d5MtHR/bmi-graph-button.png" width="30%" height="30%">
