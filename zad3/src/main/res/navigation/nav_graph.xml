@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bmi">
+
+    <fragment
+        android:id="@+id/bmi"
+        android:name="com.pjatk.pamozad1.ui.bmi.BmiFragment"
+        android:label="Bmi Calculator" >
+        <action
+            android:id="@+id/action_bmi_to_bmiGraphFragment"
+            app:destination="@id/bmiGraphFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calories"
+        android:name="com.pjatk.pamozad1.ui.calories.CaloriesFragment"
+        android:label="Calories Calculator" />
+    <fragment
+        android:id="@+id/recipes"
+        android:name="com.pjatk.pamozad1.ui.recipes.RecipesFragment"
+        android:label="Recipes" />
+    <fragment
+        android:id="@+id/bmiGraphFragment"
+        android:name="com.pjatk.pamozad1.ui.bmi.graph.BmiGraphFragment"
+        android:label="Bmi Graph" />
+
+    <fragment
+        android:id="@+id/quiz"
+        android:name="com.pjatk.pamozad1.ui.quiz.QuizFragment"
+        android:label="Quiz" />
+</navigation>
