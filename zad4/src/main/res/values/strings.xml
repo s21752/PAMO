@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PAMO Zad 1</string>
+    <string name="kg_hint">KG</string>
+    <string name="cm_hint">CM</string>
+    <string name="body_weight_label">Body weight</string>
+    <string name="body_height_label">Body height</string>
+    <string name="calculated_bmi_label">Calculated BMI is:</string>
+    <string name="pamo_splash_screen_label">PAMO</string>
+    <string name="bmi">BMI</string>
+    <string name="calories">Calories</string>
+    <string name="recipes">Recipes</string>
+    <string name="base_calories_intake_label">Your base calories intake is:</string>
+    <string name="age_hint">Age</string>
+    <string name="your_age">Your age</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="ingredients_label">Ingredients:</string>
+    <string name="bmiLabel">BMI</string>
+    <string name="quiz">Quiz</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="your_score_is">Your score is: </string>
+    <string name="restart_prompt">Do you want to try again?</string>
+</resources>
